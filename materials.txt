@@ -1,0 +1,37 @@
+# VIZOID MATERIALS LIBRARY
+# All surface material specs. Organized by surface type.
+# STATUS: default = active project spec | alternate = available swap | retired = do not use
+# REFERENCE_IMAGE = filename to drop into this folder when available.
+# Last updated: 2026-03-06
+
+================================================================================
+COUNTERTOPS
+================================================================================
+
+--- calacatta-miele | Calacatta Miele Marble | STATUS: default | CALIBRATED ✓ ---
+REFERENCE_IMAGE: material-calacatta-miele.jpg
+DESCRIPTION:
+Calacatta Miele marble. White ground with warm gold and soft taupe veining — veins are flowing, organic, medium-scale. Not stark white-and-gray Carrara. The gold/warm tone in the veining ties to the brass pendant and the warm floor. Honed finish, not high-gloss polished. Soft matte depth. Countertop edge: simple eased or pencil — no ogee, no bullnose.
+BACKSPLASH NOTE: When used as backsplash slab, match veining direction — book-matched or continuous flow preferred.
+EXCLUSIONS: Not Carrara (too cool/gray). Not Statuario (too stark). Not leathered. Not polished. Slab-look only — not tile pattern.
+
+--- white-pearl-quartzite | White Pearl Quartzite | STATUS: alternate | used in calibration render 2026-03-06 ---
+REFERENCE_IMAGE: material-white-pearl-quartzite.jpg
+DESCRIPTION:
+White Pearl quartzite. White ground with subtle warm veining — softer and more restrained than Calacatta Miele. Veins are fine, pale silver-gold, not bold. Reads as clean bright white at distance with delicate movement up close. Honed finish. Eased or pencil edge.
+VS DEFAULT: Lighter and quieter than Calacatta Miele. Better when space needs more brightness or walnut is very dark.
+EXCLUSIONS: Not pure white solid surface — must have visible veining. Not polished. Not cool-toned gray-white.
+
+================================================================================
+FLOORING
+================================================================================
+
+--- white-oak-honey | Wide Plank White Oak — Honey Blonde | STATUS: default | CALIBRATED ✓ ---
+REFERENCE_IMAGE: material-white-oak-honey.jpg
+DESCRIPTION:
+Wide plank white oak hardwood. Warm honey-blonde tone — not bleached white, not orange, not dark brown. 5–6 inch plank width. Matte finish, visible grain and subtle natural character. Bridges warm cream walls and dark walnut cabinets.
+EXCLUSIONS: Not light gray-washed. Not dark stained. Not high-gloss.
+
+================================================================================
+[NEXT SURFACE TYPE] — add cabinet, tile, wall, etc. materials here
+================================================================================

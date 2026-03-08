@@ -1,0 +1,113 @@
+# VIZOID BLOCKS LIBRARY
+# All prompt blocks for all rooms. T1 = home-wide (every view). T2 = room-specific.
+# Format per block: ID | TIER | ROOM | ALWAYS_INCLUDE | VISUAL_TRIGGER | PROMPT/SLOTS
+# SLOTS: Named fixture slots with default and optional alternates from fixtures.txt.
+#   When assembling a prompt, pull the full fixture description from fixtures.txt by ID.
+#   Swap an alternate by changing the slot reference — no other edits needed.
+# PLACEMENT: View-agnostic room-relative descriptions. Spatial/camera language goes in the view file.
+# To add a new room: append a T2 section following the same format.
+# Last updated: 2026-03-08
+
+================================================================================
+TIER 1 — HOME-WIDE  (include in every view regardless of room)
+================================================================================
+
+--- T1-A | Style Anchor | always ---
+PROMPT:
+Mid-century modern residential interior. Warm, livable, and refined — not cold or sterile. The overall palette is warm cream, natural dark wood, and white stone. Materials are honest and tactile. No chrome-and-glass minimalism; no rustic farmhouse. Specifically mid-century warm.
+
+--- T1-B | Walls | always ---
+PROMPT:
+All walls are painted in a warm cream — not pure white, not gray. Closest reference tone is Sherwin-Williams Alabaster or Benjamin Moore White Dove. Eggshell finish. Smooth plaster quality, no visible texture or brush marks.
+
+--- T1-C | Ceiling | always ---
+PROMPT:
+Ceiling field between beams is the same warm cream paint as the walls — not bright white. Ceiling reads as a continuous warm surface, not a stark contrast to the walls.
+
+--- T1-D | Structural Beams | trigger: exposed beam crossing ceiling visible ---
+PROMPT:
+Exposed structural beams are warm amber-honey wood — rich, saturated warm tone, like natural Douglas fir or pine glulam. Visible grain. Not stained dark. Not gray or bleached. The warmth of the beam color is a key part of the palette — it reads as a genuine architectural wood element, not decorative. Beam undersides and sides are the same warm amber tone.
+
+--- T1-E | Windows & Glazing | trigger: any window opening or clerestory visible ---
+PROMPT:
+Window frames are minimal — thin white-painted surround, clean reveal, no decorative casing or sill nosing. Jambs return in white-painted drywall. Glass is clear. Exterior view through all windows shows deciduous trees — full green summer canopy, natural daylight. Windows read as a living connection to the outdoors, never a black void or blank white blowout.
+
+--- T1-F | Interior Doors | trigger: door, door opening, or door frame visible ---
+PROMPT:
+Interior doors are flat slab, painted warm cream to match walls — no panel profile. Door frames and casings are minimal, same warm cream paint. Hardware is minimal brushed brass or matte black lever handle.
+
+--- T1-G | Flooring | trigger: floor surface visible ---
+PROMPT:
+Wide plank white oak hardwood flooring throughout. Warm honey-blonde tone — not bleached white, not orange, not dark brown. Plank width approximately 5–6 inches. Matte finish with visible grain and subtle natural character. The floor tone bridges the warm cream walls above and the dark walnut cabinets.
+
+================================================================================
+TIER 2 — KITCHEN  (include only in kitchen views, based on what's visible)
+================================================================================
+
+--- T2-A | Cabinets | trigger: any cabinet face, door, drawer, or tall panel ---
+PROMPT:
+All cabinet fronts are walnut slab — flat, frameless, no visible hardware whatsoever. The walnut is deep, rich, and dark — natural oiled finish, not stained, not painted. Warm dark brown with prominent vertical grain on tall doors and panels, horizontal grain on drawer fronts. Large panels show bookmatched or continuous grain run. This is dark natural walnut — not medium brown, not cherry, not a lighter wood tone. Cabinet interiors, where visible, are warm off-white or putty.
+
+--- T2-B | Countertops | trigger: countertop surface or counter edge visible | ⚑ SWAP POINT: countertop_material ---
+PROMPT:
+All countertops — perimeter, island, and any surfaces — are Calacatta Miele marble. White ground with warm gold and soft taupe veining. Honed finish, not high-gloss polished. Countertop edge profile is simple eased or pencil edge — no ogee, no bullnose.
+⚑ SWAP POINT — default is Calacatta Miele. See materials.txt > countertops for alternates.
+
+--- T2-C | Backsplash | trigger: wall zone between countertop and hood/upper cabinets visible | exclude: if no counter-to-upper zone in frame ---
+PROMPT:
+Backsplash is large-format Calacatta Miele marble slab — same material as countertops, continuous veining where possible. Runs from countertop surface up to the underside of the range hood body AND up to the underside of the lower floating shelf on the open shelving wall. Grout joints are hairline and tone-matched to stone. Slab-look only — not a tile pattern.
+
+--- T2-D | Open Shelving | trigger: floating or open shelves visible on wall | exclude: if no shelf geometry in image ---
+PROMPT:
+Two floating open shelves on the shelving wall. White oak — natural light grain, visible end grain at sides. Approximately 10–12 inches deep. Cantilevered — no visible brackets from the front face. Lower shelf bottom edge is the upper termination of the backsplash. Shelves are styled with ceramic vessels in earth tones, stoneware bowls, a small plant or herb, and wooden cutting boards leaning casually. Warm and curated, not over-styled.
+
+--- T2-E | Range Hood | trigger: hood form visible above cooktop | exclude: if cooking wall not in frame ---
+PROMPT:
+Range hood is a large-scale geometric tapered pyramid form — clean and architectural. Painted warm cream, same as walls, seamlessly blending into the wall surface above. The hood reads as a sculptural architectural element, not a metallic appliance. No visible metal seams or flashing at the wall junction. The cream hood against the cream wall and the marble backsplash below creates a clean, light focal point at the cooking wall.
+
+--- T2-F | Appliances | trigger: cooktop surface, wall oven face, or refrigerator visible ---
+SLOTS:
+  SLOT: cooktop      | default: appliance-induction-cooktop
+  SLOT: wall-oven    | default: appliance-wall-oven-stainless
+  SLOT: refrigerator | default: appliance-refrigerator-pair-dark-stainless
+PLACEMENT (view-agnostic):
+  Cooktop set into the perimeter marble countertop.
+  Wall oven set into the tall cabinet column adjacent to the cooktop.
+  Refrigerator pair set into the back wall cabinet run.
+[Pull full description for each visible slot from fixtures.txt by ID]
+
+--- T2-G | Sink & Faucet | trigger: sink basin or faucet visible ---
+SLOTS:
+  SLOT: faucet | default: faucet-gooseneck-stainless
+PLACEMENT (view-agnostic):
+  Faucet deck-mounted at primary sink. Sink is undermount.
+PROMPT (non-fixture):
+No visible cabinet hardware on any cabinet or drawer anywhere in the kitchen — push-to-open or integrated thin finger pull only.
+[Pull full faucet description from fixtures.txt by ID]
+
+--- T2-H | Island | trigger: island visible — use FULL or PARTIAL variant based on image ---
+PROMPT (FULL — island body clearly visible):
+Kitchen island matches perimeter cabinets — dark natural walnut slab fronts, no hardware. Island countertop is Calacatta Miele marble matching the perimeter. Toe kick is dark charcoal or matte black. Island reads as a grounded, furniture-like piece — substantial, not floating.
+PROMPT (PARTIAL — near edge only in foreground):
+Near face of island visible — dark natural walnut slab front panels matching wall cabinets, dark charcoal toe kick. Only the near face is visible in this view; do not render full island countertop, seating, or far side.
+
+--- T2-I | Island Pendant | trigger: pendant or ceiling fixture above island visible ---
+SLOTS:
+  SLOT: pendant | default: pendant-globe-cluster-brass | alternates: pendant-linear-cone-black
+PLACEMENT (view-agnostic):
+  Pendant hung centered above island. Ceiling canopy mounts positioned on either side of the structural beam — not on or through the beam.
+[Pull full pendant description from fixtures.txt by ID]
+
+--- T2-J | Dining & Banquette | trigger: dining table, banquette, upholstered bench, or dining chairs visible ---
+SLOTS:
+  SLOT: dining-chair | default: seating-breuer-cantilever-cane
+  SLOT: dining-table | default: seating-tulip-table-white
+PROMPT (non-fixture):
+Banquette seating is upholstered in warm natural boucle or cream fabric, tight-back, low-profile mid-century form. Bar stools at island, if visible, use the same dining-chair slot fixture at bar height.
+[Pull full chair and table descriptions from fixtures.txt by ID]
+
+================================================================================
+TIER 2 — [NEXT ROOM]  (copy this section header when adding a new room)
+================================================================================
+# Add T2 blocks for bathroom, living room, etc. here following the same format.
+# Each block needs: ID | label | trigger | PROMPT

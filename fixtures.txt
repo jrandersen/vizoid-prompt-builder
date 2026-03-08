@@ -1,0 +1,82 @@
+# VIZOID FIXTURES LIBRARY
+# All fixture descriptions. Each entry: ID | category | status | reference image | description | exclusions.
+# REFERENCE_IMAGE = filename to drop into this folder when available.
+# STATUS: active = current project spec | alternate = available swap | retired = do not use
+# Last updated: 2026-03-06
+
+================================================================================
+PENDANTS
+================================================================================
+
+--- pendant-globe-cluster-brass | Globe Cluster Bar — Satin Brass | STATUS: active | CALIBRATED ✓ ---
+REFERENCE_IMAGE: pendant-globe-cluster-brass.jpg
+DESCRIPTION:
+A single horizontal bar in warm satin brass suspends four or five frosted opal globe pendants at equal intervals. Brass hardware is brushed or satin — not polished or high-gloss. Each globe shade is round, opal white, approximately 6–8 inches in diameter, emitting a soft warm downward glow. Mid-century globe cluster bar pendant. Ceiling canopy brackets mounted on either side of the structural beam — canopy does not rest on or penetrate the beam.
+STYLE: Mid-century modern. Primary decorative lighting in the kitchen. Warm incandescent tone.
+EXCLUSIONS: Not a cone shade. Not a cylinder. Not a drum shade. Not a single large pendant. Not polished chrome.
+
+--- pendant-linear-cone-black | Linear Cone Bar — Matte Black | STATUS: alternate ---
+REFERENCE_IMAGE: pendant-linear-cone-black.jpg
+DESCRIPTION:
+A single elongated horizontal bar in matte black suspends three or four small cone shades pointing downward at equal intervals. Shades are brushed matte black with a warm brass or aged brass interior lining. Emits focused warm downward pools. Minimal matte black rod ceiling canopy.
+STYLE: Mid-century with a slightly more industrial edge. Use if globe cluster reads too warm/soft.
+EXCLUSIONS: Not polished. Not chrome. Not oversized. Not industrial-scale pipe fittings.
+
+================================================================================
+FAUCETS
+================================================================================
+
+--- faucet-gooseneck-stainless | Gooseneck — Stainless Steel | STATUS: active | CALIBRATED ✓ ---
+REFERENCE_IMAGE: faucet-gooseneck-stainless.jpg
+DESCRIPTION:
+Single-handle or bridge-style gooseneck faucet in brushed stainless steel. High arc neck, clean mid-century silhouette — not oversized, not farmhouse-scale. Simple lever or knob handle, stainless. Deck-mounted. Paired with undermount sink.
+STYLE: Stainless as the counter-level metal accent. Does not compete with brass pendant above.
+EXCLUSIONS: Not polished chrome. Not matte black at sink. Not oversized commercial or farmhouse pot filler.
+
+================================================================================
+APPLIANCES
+================================================================================
+
+--- appliance-induction-cooktop | Induction Cooktop — Flush Black Ceramic | STATUS: active | CALIBRATED ✓ ---
+REFERENCE_IMAGE: appliance-induction-cooktop.jpg
+DESCRIPTION:
+Flush black ceramic induction cooktop set into the marble countertop. Completely smooth glass-ceramic surface — no grates, no burner rings, no raised elements. Clean black rectangle flush with the marble. Touch controls minimal and barely visible at the front edge. No visible branding.
+PLACEMENT: Set into perimeter marble countertop. Black contrasts cleanly against white marble field.
+EXCLUSIONS: Not gas. No grates. No burner rings. Not raised above countertop level.
+
+--- appliance-wall-oven-stainless | Wall Oven — Stainless Steel | STATUS: active | CALIBRATED ✓ ---
+REFERENCE_IMAGE: appliance-wall-oven-stainless.jpg
+DESCRIPTION:
+Single wall oven set flush into the tall cabinet column to the right of the cooktop. Face is brushed stainless steel. Minimal horizontal bar handle — clean, understated. Control panel minimal and integrated into the stainless face. No visible branding. Large glass window in oven door. The oven face is the only stainless steel surface in the tall cabinet column.
+PLACEMENT: Dark walnut cabinet column surrounds it on all sides. Stainless reads as a precise recessed element.
+EXCLUSIONS: Not black glass. Not panel-ready. Not oversized commercial 36-inch style unless specified.
+
+--- appliance-refrigerator-pair-dark-stainless | Paired Refrigerator/Freezer Units — Dark Stainless | STATUS: active ---
+REFERENCE_IMAGE: appliance-refrigerator-pair-dark-stainless.jpg
+DESCRIPTION:
+Two full-height refrigerator/freezer units set side by side into the tall cabinet wall, spanning the full height of the cabinet run. Each unit has one refrigerator door on top and one freezer door on the bottom — four appliance doors total across the pair. The two units are mirror-image: the left unit is hinged on its left edge and the right unit is hinged on its right edge, so the doors swing outward away from each other — together they read as a single monumental refrigerator wall. Door faces are exposed dark stainless steel — not panel-ready, not walnut-clad. Handles are minimal bars in the same stainless steel finish, one per door, aligned consistently across all four. No visible branding.
+PLACEMENT: Set into the tall floor-to-soffit cabinet wall. Dark stainless faces hold their own against surrounding walnut cabinet panels without competing.
+EXCLUSIONS: Not panel-ready. Not side-by-side single unit. Not french door. Not stainless steel — stainless steel only. No visible branding or logo.
+
+================================================================================
+SEATING
+================================================================================
+
+--- seating-breuer-cantilever-cane | Breuer Cantilever Chair — Cane / Chrome | STATUS: active | CALIBRATED ✓ ---
+REFERENCE_IMAGE: seating-breuer-cantilever-cane.jpg
+DESCRIPTION:
+Breuer-style cantilever chair with woven cane seat and back panel. Frame is satin or brushed chrome — clean tubular steel, cantilevered base. Cane weave is natural, honey-amber tone, slightly warm. Single woven cane panel seat and back with thin perimeter frame. Light and airy visual weight — cane and chrome read as nearly transparent from distance.
+SCALE: Bar height at island ~26–28" seat. Standard height at dining ~18" seat.
+STYLE: Primary seating throughout kitchen and dining. Woven cane and chrome bridge walnut and cream palette.
+EXCLUSIONS: Not upholstered. Not solid seat. Not powder-coated color. Not matte black frame — chrome only.
+
+--- seating-tulip-table-white | Tulip Dining Table — White Pedestal | STATUS: active | CALIBRATED ✓ ---
+REFERENCE_IMAGE: seating-tulip-table-white.jpg
+DESCRIPTION:
+Eero Saarinen-style tulip table. Single white cast pedestal base — tapered, organic, single-stem form. Round or oval white laminate or marble top. Top and base are same white family, slightly warm white. No legs, no stretchers. Pedestal reads as a single sculptural element below a floating white top.
+PLACEMENT: Dining nook / banquette area right of kitchen. Paired with Breuer chairs and cream boucle banquette.
+EXCLUSIONS: Not four-legged. Not wood top. Not dark. Not a trestle. Not industrial.
+
+================================================================================
+[NEXT CATEGORY] — add new fixture categories here following same format
+================================================================================
