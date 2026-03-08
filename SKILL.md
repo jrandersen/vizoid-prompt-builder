@@ -1,6 +1,6 @@
 ---
-name: vizoid-prompt-builder
-description: Builds Vizoid rendering prompts from uploaded wireframe or line drawing images. Activate when user uploads a base image and identifies a room, or mentions Vizoid, rendering, or interior prompt building. Parses the image to identify visible elements, assembles a complete prompt from the blocks/fixtures/materials library, and saves the result to views/.
+name: Vizoid Interior Rendering Prompt Builder
+description: Assembles structured Vizoid AI rendering prompts from uploaded room wireframes or line drawings. Activate when the user uploads a base image (wireframe, line drawing, or shaded view) and names the room or view angle, or mentions Vizoid, rendering, or interior prompt building. Reads the project's blocks/fixtures/materials library, parses the image to determine which elements are visible, assembles a complete paste-ready prompt with explicit exclusions, and saves the result to views/ with a calibration status flag.
 license: Alder PLLC internal
 ---
 
